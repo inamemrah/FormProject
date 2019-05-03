@@ -227,11 +227,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\508Games\\Documents\\Visual Studio 2017\\Projects\\LenaProject\\Data\\Data.csproj",
+      "projectUniqueName": "C:\\Users\\508Games\\Documents\\Visual Studio 2017\\Projects\\FormProject\\Data\\Data.csproj",
       "projectName": "Data",
-      "projectPath": "C:\\Users\\508Games\\Documents\\Visual Studio 2017\\Projects\\LenaProject\\Data\\Data.csproj",
+      "projectPath": "C:\\Users\\508Games\\Documents\\Visual Studio 2017\\Projects\\FormProject\\Data\\Data.csproj",
       "packagesPath": "C:\\Users\\508Games\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\508Games\\Documents\\Visual Studio 2017\\Projects\\LenaProject\\Data\\obj\\",
+      "outputPath": "C:\\Users\\508Games\\Documents\\Visual Studio 2017\\Projects\\FormProject\\Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
