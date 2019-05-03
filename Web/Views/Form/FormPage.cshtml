@@ -1,0 +1,86 @@
+﻿
+@{
+    ViewBag.Title = "FormPage";
+    Layout = "~/Views/Shared/_MyLayout.cshtml";
+}
+
+<div class="FormPage">
+    <center>
+        <h2>FormPage</h2>
+
+        <div class="alert alert-info" role="alert" style="width:50%">
+
+            <button type="button" class="newForm btn btn-primary btn-block btn-lg" data-toggle="modal" data-target="#exampleModalCenter" style="margin-bottom:20px;">
+                Yeni Form Ekle
+            </button>
+
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">CreatedAt</th>
+                        <th scope="col"</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @for (int i = 0; i < ViewBag.NumTimes; i++)
+                    {
+                        <tr>
+                            <td>@ViewBag.Message[i].Name</td>
+                            <td>@ViewBag.Message[i].Description</td>
+                            <td>@ViewBag.Message[i].CreatedAt</td>
+                            <td><button type="button" value="@ViewBag.Message[i].Id" class="detail btn btn-info btn-lg btn-block" data-toggle="modal" data-target="#exampleModalCenter">Detail</button></td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Yeni Form Ekle</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form method="post" action="createForm">
+                                <center>
+                                    <div class="alert alert-info" role="alert" style="width:50%">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Name</label>
+                                            <input type="text" class="Name form-control" name="Name" placeholder="Name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Description</label>
+                                            <input type="text" class="Description form-control" name="Description" placeholder="Description">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">First Name</label>
+                                            <input type="text" class="FirstName form-control" name="FirstName" placeholder="First Name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Last Name</label>
+                                            <input type="text" class="LastName form-control" name="LastName" placeholder="Last Name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Age</label>
+                                            <input type="number" class="Age form-control" name="Age" placeholder="Age">
+                                        </div>
+
+                                        <button type="submit" class="Create btn btn-success btn-lg btn-block">Create</button>
+                                    </div>
+                                </center>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </center>
+</div>

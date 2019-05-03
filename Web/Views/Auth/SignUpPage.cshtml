@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "SignUpPage";
+    Layout = "~/Views/Shared/_MyLayout.cshtml";
+}
+
+<div class="SignUpPage">
+    <form method="post" action="SignUp">
+        <center>
+            <h2>SignUpPage</h2>
+
+            <div class="alert alert-info" role="alert" style="width:50%">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="text" class="UserName form-control" name="UserName" placeholder="UserName">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="Password form-control" name="Password" placeholder="Password">
+                </div>
+                <button type="button" class="signUp btn btn-success btn-lg btn-block">SignUp</button>
+                <a href="~/Auth/LoginPage" class="btn btn-info btn-lg btn-block active" role="button" aria-pressed="true">LoginPage</a>
+            </div>
+        </center>
+    </form>
+</div>
